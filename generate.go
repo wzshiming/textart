@@ -63,7 +63,6 @@ func (b *builder) append(s string) {
 		b.fill()
 	}
 	for i, v := range rows {
-		//b.rows[i] = append(b.rows[i], []rune(strings.TrimRightFunc(v, unicode.IsSpace))...)
 		b.rows[i] = append(b.rows[i], []rune(v)...)
 	}
 	b.fill()
